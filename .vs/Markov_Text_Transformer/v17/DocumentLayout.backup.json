@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|c:\\users\\valentin\\source\\repos\\markov_text_transformer\\markov_text_transformer\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|c:\\users\\valentin\\source\\repos\\markov_text_transformer\\markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\markov_text_transformer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\markov_text_transformer\\markovalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\markovalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\markov_text_transformer\\markovrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\markovrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.Designer.cs*",
+              "RelativeToolTip": "Markov_Text_Transformer\\Form1.Designer.cs*",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwG0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T16:31:39.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs [Design]*",
+              "RelativeToolTip": "Markov_Text_Transformer\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T15:44:58.256Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs*",
+              "RelativeToolTip": "Markov_Text_Transformer\\Form1.cs*",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAswLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T15:52:06.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Program.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\Program.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\Program.cs",
+              "RelativeToolTip": "Markov_Text_Transformer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T15:51:38.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MarkovRule.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\MarkovRule.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\MarkovRule.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\MarkovRule.cs",
+              "RelativeToolTip": "Markov_Text_Transformer\\MarkovRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T15:46:23.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MarkovAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\MarkovAlgorithm.cs",
+              "RelativeDocumentMoniker": "Markov_Text_Transformer\\MarkovAlgorithm.cs",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\Markov_Text_Transformer\\Markov_Text_Transformer\\MarkovAlgorithm.cs",
+              "RelativeToolTip": "Markov_Text_Transformer\\MarkovAlgorithm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T15:45:53.634Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
