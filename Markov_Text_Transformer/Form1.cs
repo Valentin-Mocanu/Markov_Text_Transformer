@@ -1,12 +1,5 @@
-﻿using Markov_Text_Transformer;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -19,70 +12,62 @@ namespace Markov_Text_Transformer
             InitializeComponent();
 
             comboBoxOptions.Items.Clear();
-            comboBoxOptions.Items.Add("Eliminare subcuvant");
-            comboBoxOptions.Items.Add("Inlocuire subcuvant");
-            comboBoxOptions.Items.Add("Inserare caractere - inainte subcuvant");
-            comboBoxOptions.Items.Add("Inserare caractere - dupa subcuvant");
-            comboBoxOptions.Items.Add("Inserare caractere - inainte + dupa");
+            comboBoxOptions.Items.Add("Delete substring");
+            comboBoxOptions.Items.Add("Replace substring");
+            comboBoxOptions.Items.Add("Insert before substring");
+            comboBoxOptions.Items.Add("Insert after substring");
+            comboBoxOptions.Items.Add("Insert before and after");
             comboBoxOptions.SelectedIndex = 0;
         }
 
-        private void buttonRun_Click(object sender, EventArgs e)
+        private void ButtonRun_Click(object sender, EventArgs e)
         {
             listBoxResults.Items.Clear();
 
-            string inputString = textBoxInputString.Text.Trim(); // Cuvantul initial, introdus de utilizator = sigma
-            string subString = textBoxSubString.Text.Trim(); // Subcuvantul ales din cuvantul initial = beta
-            string replacementString = textBoxReplacementString.Text.Trim(); // Expresia de inlocuit la alegerea unor reguli specifice de inlocuire = gama
+            string inputString = textBoxInputString.Text.Trim(); // initial string = sigma (σ)
+            string subString = textBoxSubString.Text.Trim(); // substring = beta (β)
+            string replacementString = textBoxReplacementString.Text.Trim(); // replacement string, used on some specific rules = gama (γ)
 
-            // Validari de baza
             if (string.IsNullOrEmpty(inputString))
             {
-                MessageBox.Show("Cuvantul sigma (σ) nu poate fi gol!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The initial string (σ) cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (string.IsNullOrEmpty(subString))
             {
-                MessageBox.Show("Subcuvantul beta (β) nu poate fi gol!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The substring (β) cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!inputString.Contains(subString))
             {
-                MessageBox.Show("Subcuvantul beta (β) nu apare in cuvantul sigma (σ)!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The substring (β) does not appear in the initial string (σ)!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (comboBoxOptions.SelectedIndex < 0)
-            {
-                MessageBox.Show("Selectati o optiune!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Validare expresie de inlocuit pentru optiunile 2–4
             if (comboBoxOptions.SelectedIndex >= 1 && string.IsNullOrEmpty(replacementString))
             {
-                MessageBox.Show("Trebuie sa adaugati o expresie de inlocuit (γ) pentru aceasta optiune!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You need to add a replacement string (γ) for this operation!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // -------------------------
-            // Constructie reguli Markov
-            // -------------------------
+            // -------------------------------------------
+            // Markov rule (algorithm) - how it is done
+            // -------------------------------------------
 
-            // Lista care stocheaza toate regulile definite pentru transformarea cuvantului
+            // The list that stores all the rules defined for string transformation
             List<MarkovRule> rules = new List<MarkovRule>();
-            int ruleCounter = 1; // Folosit la lista de optiuni
+            int ruleCounter = 1; // Used in the operation list
 
             // 4) λ → A
             inputString = "A" + inputString;
             listBoxResults.Items.Add("4) " + inputString);
 
-            // 1) Regula specifica optiunii
+            // 1) Chosen operation (rule)
             switch (comboBoxOptions.SelectedIndex)
             {
-                case 0: // Eliminare (Aβz -> Az)
+                case 0: // Delete (Aβz -> Az)
                     rules.Add(new MarkovRule
                     {
                         RuleId = ruleCounter++,
@@ -91,7 +76,7 @@ namespace Markov_Text_Transformer
                     });
                     break;
 
-                case 1: // Inlocuire (Aβz -> γAz, unde "γ" e expresia de inlocuit)
+                case 1: // Replace (Aβz -> γAz, where γ is the replacement string)
                     rules.Add(new MarkovRule
                     {
                         RuleId = ruleCounter++,
@@ -100,7 +85,7 @@ namespace Markov_Text_Transformer
                     });
                     break;
 
-                case 2: // Inserare inainte (Aβz -> γβAz, unde "γ" e expresia de inlocuit)
+                case 2: // Insert before (Aβz -> γβAz, where γ is the replacement (inserted) string)
                     rules.Add(new MarkovRule
                     {
                         RuleId = ruleCounter++,
@@ -109,7 +94,7 @@ namespace Markov_Text_Transformer
                     });
                     break;
 
-                case 3: // Inserare dupa (Aβz -> βγAz, unde "γ" e expresia de inlocuit)
+                case 3: // Insert after (Aβz -> βγAz, where γ is the replacement (inserted) string)
                     rules.Add(new MarkovRule
                     {
                         RuleId = ruleCounter++,
@@ -118,7 +103,7 @@ namespace Markov_Text_Transformer
                     });
                     break;
 
-                case 4: // Inserare inainte si dupa (Aβz -> γβγAz, unde "γ" e expresia de inlocuit)
+                case 4: // Insert before and after (Aβz -> γβγAz, where γ is the replacement (inserted) string)
                     rules.Add(new MarkovRule
                     {
                         RuleId = ruleCounter++,
@@ -129,7 +114,7 @@ namespace Markov_Text_Transformer
             }
 
             // 2) Ax → xA
-            // HashSet care contine toate caracterele distincte aparute in cuvantul curent
+            // HashSet stores all the distinct characters found in the current string
             HashSet<char> alphabet = new HashSet<char>(inputString);
             alphabet.Add('A');
 
@@ -153,23 +138,22 @@ namespace Markov_Text_Transformer
             });
 
             // -------------------------
-            // Rulare algoritm
+            // Run algorithm
             // -------------------------
 
             MarkovAlgorithm markov = new MarkovAlgorithm();
 
             try
             {
-                // Rularea algoritmului
                 markov.ApplyMarkovAlgorithm(inputString, rules);
 
-                // Afisarea pasilor
+                // Display the steps
                 foreach (string step in markov.Steps)
                     listBoxResults.Items.Add(step);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("A aparut o eroare in timpul rulari algoritmului:\n\n" + ex.Message, "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred while running the algorithm:\n\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

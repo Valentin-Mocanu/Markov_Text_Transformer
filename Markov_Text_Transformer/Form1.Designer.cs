@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBoxInputString = new System.Windows.Forms.TextBox();
             this.textBoxSubString = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,9 +65,9 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(60, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 18);
+            this.label1.Size = new System.Drawing.Size(126, 18);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cuvantul sigma (σ):";
+            this.label1.Text = "Initial string (σ):";
             // 
             // label2
             // 
@@ -75,9 +76,9 @@
             this.label2.ForeColor = System.Drawing.Color.Green;
             this.label2.Location = new System.Drawing.Point(60, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 18);
+            this.label2.Size = new System.Drawing.Size(110, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Subcuvantul beta (β):";
+            this.label2.Text = "Substring (β):";
             // 
             // comboBoxOptions
             // 
@@ -89,9 +90,9 @@
             "Inlocuire subcuvant",
             "Transformare + mutare la final",
             "Transformare + mutare la inceput"});
-            this.comboBoxOptions.Location = new System.Drawing.Point(32, 257);
+            this.comboBoxOptions.Location = new System.Drawing.Point(46, 257);
             this.comboBoxOptions.Name = "comboBoxOptions";
-            this.comboBoxOptions.Size = new System.Drawing.Size(218, 26);
+            this.comboBoxOptions.Size = new System.Drawing.Size(174, 26);
             this.comboBoxOptions.TabIndex = 4;
             // 
             // textBoxReplacementString
@@ -111,7 +112,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 18);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Expresia de inlocuit:";
+            this.label4.Text = "Replacement String:";
             // 
             // buttonRun
             // 
@@ -123,9 +124,9 @@
             this.buttonRun.Name = "buttonRun";
             this.buttonRun.Size = new System.Drawing.Size(116, 38);
             this.buttonRun.TabIndex = 7;
-            this.buttonRun.Text = "Ruleaza";
+            this.buttonRun.Text = "Run";
             this.buttonRun.UseVisualStyleBackColor = false;
-            this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
+            this.buttonRun.Click += new System.EventHandler(this.ButtonRun_Click);
             // 
             // listBoxResults
             // 
@@ -145,9 +146,9 @@
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.Location = new System.Drawing.Point(60, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 18);
+            this.label3.Size = new System.Drawing.Size(159, 18);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Alegeti o optiune:";
+            this.label3.Text = "Select an operation:";
             // 
             // label5
             // 
@@ -156,9 +157,9 @@
             this.label5.ForeColor = System.Drawing.Color.Green;
             this.label5.Location = new System.Drawing.Point(289, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 18);
+            this.label5.Size = new System.Drawing.Size(70, 18);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Rezultat:";
+            this.label5.Text = "Results:";
             // 
             // Form1
             // 
@@ -174,6 +175,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSubString);
             this.Controls.Add(this.textBoxInputString);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Markov Text Transformer";
             this.ResumeLayout(false);

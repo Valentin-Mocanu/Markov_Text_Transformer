@@ -1,58 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Markov_Text_Transformer
 {
     public class MarkovAlgorithm
     {
-        // Lista in care se memoreaza toti pasii algoritmului
+        // The list that stores all the algorithm steps
         public List<string> Steps { get; private set; }
 
-        // Constructorul
         public MarkovAlgorithm()
         {
             Steps = new List<string>();
         }
 
-        // Primeste: word = cuvantul (σ), rules = lista regulilor; Returneaza: cuvantul final
+        // Input: initial string (σ), rules; Output: final string
         public string ApplyMarkovAlgorithm(string word, List<MarkovRule> rules)
         {
             Steps.Clear();
 
-            // Se aplica pana nu mai exista reguli aplicabile sau pana intalneste o regula terminala
+            // Runs until no more rules can be applied or when it encounters the terminal rule
             while (true)
             {
                 bool applied = false;
 
-                // "IndexOf" cauta prima aparitie, cea mai din stanga
+                // "IndexOf" searches for the first (leftmost) occurrence
                 foreach (MarkovRule rule in rules)
                 {
                     int pos = word.IndexOf(rule.Left);
                     if (pos != -1)
                     {
-                        // Rescrie cuvantul
+                        // Rewrite the word
                         string newWord = word.Remove(pos, rule.Left.Length).Insert(pos, rule.Right);
 
-                        // Memorarea pasului
+                        // Memorize the step
                         Steps.Add(rule.RuleId + ") " + newWord);
 
                         word = newWord;
                         applied = true;
 
-                        // Regula terminala (algoritmul se opreste imediat)
+                        // Terminal rule (the algorithm stops immediately)
                         if (rule.IsTerminal)
+                        {
                             return word;
+                        }
 
                         break;
                     }
                 }
-
-                // Daca nu se mai aplica nicio regula, algoritmul se opreste natural
+                // If no more rules can be applied, the algorithm stops
                 if (!applied)
+                {
                     return word;
+                }
             }
         }
     }

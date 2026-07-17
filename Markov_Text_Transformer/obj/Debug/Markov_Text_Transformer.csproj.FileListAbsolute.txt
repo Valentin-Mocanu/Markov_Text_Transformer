@@ -9,3 +9,14 @@ C:\Users\Valentin\source\repos\Markov_Text_Transformer\Markov_Text_Transformer\o
 C:\Users\Valentin\source\repos\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.pdb
 C:\Users\Valentin\source\repos\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.exe.config
 C:\Users\Valentin\source\repos\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.Form1.resources
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\bin\Debug\Markov_Text_Transformer.exe.config
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\bin\Debug\Markov_Text_Transformer.exe
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\bin\Debug\Markov_Text_Transformer.pdb
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.csproj.AssemblyReference.cache
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.exe.config
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.Form1.resources
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.Properties.Resources.resources
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.csproj.GenerateResource.cache
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.exe
+C:\Users\Valentin\Documents\GitHub\Markov_Text_Transformer\Markov_Text_Transformer\obj\Debug\Markov_Text_Transformer.pdb
