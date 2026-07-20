@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|c:\\users\\valentin\\documents\\github\\markov_text_transformer\\markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|c:\\users\\valentin\\documents\\github\\markov_text_transformer\\markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|solutionrelative:markov_text_transformer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81B934A0-BB83-4802-B0FF-BCB3C39AC87D}|Markov_Text_Transformer\\Markov_Text_Transformer.csproj|C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\markov_text_transformer\\markovalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs",
               "RelativeDocumentMoniker": "Markov_Text_Transformer\\Form1.cs",
@@ -67,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs",
               "RelativeDocumentMoniker": "Markov_Text_Transformer\\Form1.cs",
               "ToolTip": "C:\\Users\\Valentin\\Documents\\GitHub\\Markov_Text_Transformer\\Markov_Text_Transformer\\Form1.cs",
               "RelativeToolTip": "Markov_Text_Transformer\\Form1.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T15:52:06.345Z",
               "EditorCaption": ""
@@ -88,8 +88,7 @@
               "RelativeToolTip": "Markov_Text_Transformer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T15:51:38.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T15:51:38.159Z"
             },
             {
               "$type": "Document",
@@ -101,8 +100,7 @@
               "RelativeToolTip": "Markov_Text_Transformer\\MarkovRule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T15:46:23.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T15:46:23.24Z"
             },
             {
               "$type": "Document",
@@ -114,8 +112,7 @@
               "RelativeToolTip": "Markov_Text_Transformer\\MarkovAlgorithm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T15:45:53.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-03T15:45:53.634Z"
             }
           ]
         }
