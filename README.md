@@ -1,7 +1,9 @@
 # Markov Text Transformer
 
 Markov Text Transformer este o aplicatie de transformare a unui sir de caractere, provenit de la input-ul utilizatorului, intr-un alt sir de caractere, pe baza unor reguli specifice.
+
 Aplicatia functioneaza conform principiul algoritmului lui Markov, unde avem un cuvant initial si o lista ordonata de reguli, de forma left -> right. Ideea principala este urmatoarea: se cauta prima regula din lista de reguli, care poate fi aplicata pe cuvantul nostru; se va repeta acest procedeu pana cand nu se mai poate aplica nicio regula din lista de reguli sau am ajuns la regula terminala (o regula speciala de oprire a algoritmului).
+
 In cazul nostru, utilizatorul introduce string-ul initial, alege un substring, care trebuie sa fie inclus in string-ul initial, o operatie din lista prestabilita (unde se regasesc urmatoarele operatii: eliminare substring, inlocuire subtring, adaugare inainte, adaugare dupa si adaugare inainte + dupa), iar la final, se va afisa modul de functionare a algoritmului, unde la ultima regula aplicata se va gasi rezultatul nostru.
 
 ## Despre Algoritmul Markov
